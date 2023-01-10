@@ -19,7 +19,6 @@ btn.addEventListener('click', function() {
         ul.appendChild(newTask);
         // inputの中に入力された文字を消去する
         document.querySelector('#input').value = '';
-        
         // Deleteボタンを作成する
         const deleteBtn = document.createElement('div');
         // 作成した<div>のtextContentを'Delete'にする

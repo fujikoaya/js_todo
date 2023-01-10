@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1fa73797ae.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <div class="container">
-            <h1>To Do List</h1>
-            <form>
-                <input type="text" id="input" placeholder="Add your task here">
-                <input type="button" id="btn" value="Add">
-            </form>
-            <ul class="todo-list">
-                <!-- ここに要素が追加されていく -->
-            </ul>
+        <h1>Dream list</h1>
+        <p>What is your dream in life?</p>
+        <form>
+            <input type="text" id="input" placeholder="Add your dream here">
+            <select name="dreams" id="dreams-select">
+                <option value="">please choose a option</option></option>
+                <option value="travel">Travel</option>
+                <option value="shopping">Shopping</option>
+                <option value="active">Active</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="btn" type="button"><i class="fa-solid fa-plane"></i></button>
+            <!-- <input type="button" value=""> -->
+        </form>
+        <div class="list">
+        <h2>Travel</h2>
+        <ul class="todo-list">
+            <!-- ここに要素が追加されていく -->
+        </ul>
+        <h2>Shopping</h2>
+        <ul class="todo-list">
+            <!-- ここに要素が追加されていく -->
+        </ul>
+        <h2>Active</h2>
+        <ul class="todo-list">
+            <!-- ここに要素が追加されていく -->
+        </ul>
+        <h2>Other</h2>
+        <ul class="todo-list">
+            <!-- ここに要素が追加されていく -->
+        </ul>
+        </div>
     </div>
-    <script src="./assets/js/answer.js"></script>
+        
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
